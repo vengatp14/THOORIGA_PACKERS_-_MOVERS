@@ -383,38 +383,47 @@
                     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
                         aria-label="Close"></button>
                 </div>
-                <form class="modal-body" style="padding: 1rem;">
+                <form class="modal-body" action="https://api.web3forms.com/submit" method="POST" id="form" style="padding: 1rem;">
+
+
+                    <input type="hidden" name="access_key" value="a0443457-5c69-48cb-a9c8-998a2e2d133d" />
+                    <input type="hidden" name="subject" value="New Submission from Web3Forms" />
+                    <input type="hidden" name="redirect" value="https://thoorigapackersandmovers.com/" />
+                    <input type="checkbox" name="botcheck" id="" style="display: none;" />
+
+
+
                     <div class="form-group mb-3">
                         <label for="name">Your Name</label>
-                        <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                        <input type="text" class="form-control" id="name" placeholder="Enter your name" name="Your Name" required>
                     </div>
                     <div class="form-group mb-3">
                         <label for="mobile">Your Mobile Number</label>
-                        <input type="tel" class="form-control" id="mobile" placeholder="Enter your mobile number"
-                            required>
+                        <input type="tel" class="form-control" id="mobile" placeholder="Enter your mobile number" name="Your Mobile Number" 
+                            required >
                     </div>
                     <div class="form-group mb-3">
                         <label for="email">Your Email ID</label>
-                        <input type="email" class="form-control" id="email" placeholder="Enter your email ID" required>
+                        <input type="email" class="form-control" name="Your Email ID " id="email" placeholder="Enter your email ID" required>
                     </div>
                     <div class="form-group mb-3">
                         <label for="pickup">Pickup Location</label>
-                        <input type="text" class="form-control" id="pickup" placeholder="Enter pickup location"
+                        <input type="text" class="form-control" name="Pickup Location" id="pickup" placeholder="Enter pickup location"
                             required>
                     </div>
                     <div class="form-group mb-3">
                         <label for="drop">Drop Location</label>
-                        <input type="text" class="form-control" id="drop" placeholder="Enter drop location" required>
+                        <input type="text" name="Drop Location" class="form-control" id="drop" placeholder="Enter drop location" required>
                     </div>
                     <div class="form-group mb-3">
                         <label for="property">Property Size</label>
-                        <input type="text" class="form-control" id="property"
+                        <input type="text" name="Property Size" class="form-control" id="property"
                             placeholder="e.g. furniture, few boxes, office chairs & tables" required>
                     </div>
                     <div class="form-group mb-4">
                         <label for="message">Message</label>
                         <textarea class="form-control" id="message" rows="3"
-                            placeholder="Enter any message..."></textarea>
+                            placeholder="Enter any message..." name="Message"></textarea>
                     </div>
                     <button type="submit" class="btn w-100"
                         style="background-color: #00D084; color: white; font-weight: bold;">Send Message</button>
